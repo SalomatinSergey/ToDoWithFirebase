@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="ToDoWithFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="sX7-TY-sFE">
+                                <rect key="frame" x="20" y="243" width="374" height="410"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDoFireBase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="alW-vC-2xv">
+                                        <rect key="frame" x="70.5" y="0.0" width="233" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="wla-9d-0t6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="pbz-ds-pOA">
+                                        <rect key="frame" x="25" y="168" width="324" height="242"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ami-gT-v6j">
+                                                <rect key="frame" x="20" y="0.0" width="284" height="112"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user does not exist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gup-Oe-HnT">
+                                                        <rect key="frame" x="62.5" y="0.0" width="159.5" height="24"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OmZ-C1-91i">
+                                                        <rect key="frame" x="0.0" y="34" width="284" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34" id="sFe-pM-YhT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kmV-QJ-Lbf">
+                                                        <rect key="frame" x="0.0" y="78" width="284" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34" id="iL1-Wb-BWo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="OmZ-C1-91i" firstAttribute="leading" secondItem="Ami-gT-v6j" secondAttribute="leading" id="Cma-ZE-AnR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OmZ-C1-91i" secondAttribute="trailing" id="ErM-xs-fxh"/>
+                                                    <constraint firstItem="kmV-QJ-Lbf" firstAttribute="leading" secondItem="Ami-gT-v6j" secondAttribute="leading" id="XHM-kq-f0r"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kmV-QJ-Lbf" secondAttribute="trailing" id="zht-ew-Dcu"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rLq-mp-4km">
+                                                <rect key="frame" x="60" y="172" width="204" height="70"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lK7-b9-mzU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="204" height="41"/>
+                                                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="Mf3-LS-pLz"/>
+                                                            <constraint firstAttribute="height" constant="41" id="xOC-1M-jXl"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Login">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Faa-ze-ay3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NG-Cp-hCz">
+                                                        <rect key="frame" x="0.0" y="46" width="204" height="24"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="10"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Register">
+                                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rsa-xf-ISu"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="9NG-Cp-hCz" secondAttribute="trailing" id="ACU-7s-5CI"/>
+                                                    <constraint firstItem="9NG-Cp-hCz" firstAttribute="leading" secondItem="rLq-mp-4km" secondAttribute="leading" id="CPI-4g-AU3"/>
+                                                    <constraint firstItem="lK7-b9-mzU" firstAttribute="leading" secondItem="rLq-mp-4km" secondAttribute="leading" id="Ig6-3X-eG4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lK7-b9-mzU" secondAttribute="trailing" id="dbY-ay-6hk"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="rLq-mp-4km" firstAttribute="leading" secondItem="pbz-ds-pOA" secondAttribute="leading" constant="60" id="GkR-Q6-hQd"/>
+                                            <constraint firstItem="Ami-gT-v6j" firstAttribute="leading" secondItem="pbz-ds-pOA" secondAttribute="leading" constant="20" id="Pcf-yI-jJV"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ami-gT-v6j" secondAttribute="trailing" constant="20" id="c84-gY-fjI"/>
+                                            <constraint firstAttribute="trailing" secondItem="rLq-mp-4km" secondAttribute="trailing" constant="60" id="yLF-HX-0Gp"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pbz-ds-pOA" firstAttribute="leading" secondItem="sX7-TY-sFE" secondAttribute="leading" constant="25" id="8mb-2J-Slz"/>
+                                    <constraint firstAttribute="trailing" secondItem="pbz-ds-pOA" secondAttribute="trailing" constant="25" id="amd-rN-bez"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99983865019999996" green="0.90301120280000002" blue="0.65924090150000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sX7-TY-sFE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2s4-ql-5DM"/>
+                            <constraint firstItem="sX7-TY-sFE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TFN-uH-Vr4"/>
+                            <constraint firstItem="sX7-TY-sFE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dGn-Qw-WgY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sX7-TY-sFE" secondAttribute="trailing" constant="20" id="dpg-Du-PrF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="OmZ-C1-91i" id="Be3-Th-IlX"/>
+                        <outlet property="passwordField" destination="kmV-QJ-Lbf" id="ost-9n-reg"/>
+                        <outlet property="warningLabel" destination="gup-Oe-HnT" id="6mb-F4-L0g"/>
+                        <segue destination="l16-ss-euH" kind="presentation" identifier="taskSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="jb3-b2-9Kr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--Current tasks-->
+        <scene sceneID="E4a-NB-eQW">
+            <objects>
+                <viewController id="irf-qb-hLg" customClass="TasksViewController" customModule="ToDoWithFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xOP-5N-YZz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8wl-uA-jf3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" red="1" green="0.90072520359999997" blue="0.66047661589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" systemColor="secondarySystemBackgroundColor"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="RsO-cu-OTr">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RsO-cu-OTr" id="0z0-1P-zL7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="irf-qb-hLg" id="2a3-k6-ehn"/>
+                                    <outlet property="delegate" destination="irf-qb-hLg" id="IvI-hI-gfA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fQD-rM-6xM"/>
+                        <color key="backgroundColor" red="0.99983865019999996" green="0.90301120280000002" blue="0.65924090150000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8wl-uA-jf3" secondAttribute="bottom" id="3Ac-XG-Wld"/>
+                            <constraint firstItem="8wl-uA-jf3" firstAttribute="top" secondItem="fQD-rM-6xM" secondAttribute="top" id="9fR-LF-MxR"/>
+                            <constraint firstItem="8wl-uA-jf3" firstAttribute="trailing" secondItem="fQD-rM-6xM" secondAttribute="trailing" id="b3p-kv-AAK"/>
+                            <constraint firstItem="8wl-uA-jf3" firstAttribute="leading" secondItem="fQD-rM-6xM" secondAttribute="leading" id="yro-mA-F7L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Current tasks" id="avo-SD-YG4">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="v1B-IG-kvz">
+                            <connections>
+                                <action selector="signOutBitton:" destination="irf-qb-hLg" id="wy9-Fx-o3F"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SYx-nA-2rI">
+                            <connections>
+                                <action selector="addTaskButton:" destination="irf-qb-hLg" id="OYo-Ir-MdZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableViewOutlet" destination="8wl-uA-jf3" id="20q-2z-2o3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0RL-9b-9uy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jxQ-1H-b4T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l16-ss-euH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zt6-h6-wMR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="irf-qb-hLg" kind="relationship" relationship="rootViewController" id="dzS-NO-7QU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIJ-zL-lbx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
