@@ -21,8 +21,8 @@
  ```
  pod install
  ```
- also, create your database plist according to this [instruction](https://console.firebase.google.com/u/0/project/todo-tasks-a404c/settings/general/ios:SergeyS.ToDoWithFirebase) and add him to "Supporting files"
-
+ also, create a database on firebase. Go to project settings and download GoogleService-Info plist. Add him to "Supporting files"
+![Image2](https://github.com/SalomatinSergey/ToDoWithFirebase/blob/main/ToDoWithFirebase/Supporting%20files/Assets.xcassets/app.dataset/2022-06-27_10-25-09.png)
  ## Requirements
 
  - Xcode 12 or later
